@@ -1,1 +1,100 @@
-
+[
+    {
+        "id": 1,
+        "name": "Dress 1",
+        "price": "1999",
+        "description": {
+            "Dimensions": "35.6 x 25.4 x 5.8 cm; 360 Grams",
+            "Weight": "320 g",
+            "Fit_Type": "Regular"
+        },
+        "img": "fDress_1.png"
+    },
+    {
+        "id": 2,
+        "name": "Dress 2",
+        "price": "1999",
+        "description": {
+            "Dimensions": "35.6 x 25.4 x 5.8 cm; 360 Grams",
+            "Weight": "360 g",
+            "Fit_Type": "Regular"
+        },
+        "img": "fDress_2.png"
+    },
+    {
+        "id": 3,
+        "name": "Women Suit ",
+        "price": "899",
+        "description": {
+            "Dimensions": "35.6 x 25.4 x 5.8 cm; 360 Grams",
+            "Weight": "330 g",
+            "Fit_Type": "Regular"
+        },
+        "img": "fDress_3.png"
+    },
+    {
+        "id": 4,
+        "name": "Redmi Note 12 5G Black 6GB RAM 128GB ROM | 1st Phone with 120Hz Super AMOLED and Snapdragon® 4 Gen 1",
+        "price": "12899",
+        "description": {
+            "Dimensions": "AMOLED (1080x2400) ",
+            "Weight": "250g ",
+            "Refresh_Rate": "120Hz "
+        },
+        "img": "phone.png"
+    },
+    {
+        "id": 5,
+        "name": "Haier 165L 1 Star Direct Cool Single Door Refrigerator (HED-171RS-P, Red Steel)",
+        "price": "45850",
+        "description": {
+            "Dimensions": "1920 X 1080 (FHD) Pixels",
+            "Weight": "20 kg"
+        },
+        "img": "refrigerator.png"
+    },
+    {
+        "id": 6,
+        "name": "Monitor 27-inch(68.60cm) FHD Monitor, IPS, 75, Bezel Less Design, AMD FreeSync, Flicker Free, HDMI, D-sub",
+        "price": "11750",
+        "description": {
+            "Dimensions": "1920 X 1080 (FHD) Pixels",
+            "Weight": "5 kg",
+            "Refresh_Rate": "75 Hz"
+        },
+        "img": "monitor.png"
+    },
+    {
+        "id": 7,
+        "name": "T-Shirt, Charcoal",
+        "price": "499",
+        "description": {
+            "Dimensions": "35.6 x 25.4 x 5.8 cm; 360 Grams",
+            "Weight": "200 g",
+            "Fit_Type": "Regular"
+        },
+        "img": "shirt_1.png"
+    },
+    {
+        "id": 8,
+        "name": "T-Shirt, Maroon",
+        "price": "459",
+        "description": {
+            "Dimensions": "35.6 x 25.4 x 5.8 cm; 360 Grams",
+            "Weight": "130 g",
+            "Fit_Type": "Regular"
+        },
+        "img": "shirt_2.png"
+    },
+    {
+        "id": 9,
+        "name": "T-Shirt, Sky Blue",
+        "price": "459",
+        "description": {
+            "Dimensions": "35.6 x 25.4 x 5.8 cm; 360 Grams",
+            "Weight": "150 g",
+            "Fit_Type": "Regular"
+        },
+        "img": "shirt_3.png"
+    }
+]
