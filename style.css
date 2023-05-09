@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+:root {
+    --bg: rgb(233, 233, 233);
+    --header_color: rgb(31, 106, 197);
+    --fx_color: #da0c40;
+    --gray: rgb(33, 37, 41);
+    --white: #FFF;
+    --head_FF: 'Cormorant Garamond', serif;
+}
+
+body {
+    background: var(--bg);
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.brandIcon,
+span.brandName,
+nav a,
+.collection_item a {
+    color: var(--gray);
+}
+
+.brandIcon {
+    font-size: 30px;
+}
+
+.cta a {
+    transition: all .2s ease-in-out,
+}
+
+.cta a:hover {
+    color: var(--fx_color);
+}
+
+.headerNav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.192);
+}
+
+.nav-item a {
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: all .2s ease-in-out;
+    color: var(--gray);
+
+}
+
+.nav-item a:hover,
+.nav-item a.active {
+    color: var(--fx_color);
+    font-weight: 600;
+}
+
+.navbar-toggler {
+    font-size: 35px;
+    color: black;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.heroSection {
+    background: var(--header_color);
+    height: 780px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.heroSection_bg {
+    position: absolute;
+    background: #AFD3E2;
+    width: 800px;
+    height: 750px;
+    border-radius: 100px;
+    rotate: 45deg;
+    top: 0;
+    right: -290px;
+}
+
+.heading {
+
+    outline: 4px dashed white;
+    position: relative;
+    z-index: 9;
+}
+
+.heading::after {
+    background: rgba(44, 81, 201, 0.664);
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -6;
+}
+
+.style {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.05);
+    background: rgb(51, 6, 155);
+    z-index: -6;
+    border-radius: 10px;
+}
+
+.startHeading {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.heroSection .mainHeading {
+    font-size: 5rem;
+    position: relative;
+    color: var(--white);
+    font-family: var(--head_FF);
+    font-style: italic;
+    font-weight: 600;
+}
+
+.subMainHeadLine {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.heroSection p {
+    font-weight: 400;
+}
+
+.mega_sale {
+    font-size: 1.2rem;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: var(--fx_color);
+    color: var(--white);
+}
+
+.shopBtn {
+
+    padding: 10px 20px;
+    margin: 30px 0;
+    width: 25%;
+    height: 50px;
+    transition: background .2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.shopBtn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -40%;
+    transform: translate(-50%, -50%) skew(30deg);
+    background-color: var(--white);
+    width: 60px;
+    height: 100px;
+    transition: left 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.shopBtn:hover::before {
+    left: 140%;
+}
+
+.title h2 {
+    position: relative;
+}
+
+.title h2::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    background-color: var(--fx_color);
+    height: 100%;
+    width: 4px;
+}
+
+.prod_list {
+    display: flex;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.collection_item {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.collection_item a {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.collection_item a:hover {
+    color: #da0c40;
+}
+
+.collection_item .preview {
+    height: 60%;
+}
+
+.collection_item .preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.item_detail {
+    margin-top: 15px;
+    height: 40%;
+}
+
+.item_detail h3 {
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 15px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.card {
+    width: 100%;
+    height: 200px;
+    background: url("./img/offer_sale.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.card h2 {
+    color: var(--white);
+    text-align: end;
+    padding-top: 120px;
+    font-size: 1.2rem;
+    padding-right: 190px;
+}
+
+.card .Offerbtn {
+    width: 250px;
+    position: absolute;
+    top: 80%;
+    right: 210px;
+    transform: translateY(-50%);
+    padding: 10px 0;
+    border-radius: 20px;
+    scale: .9
+}
+
+
+#testimonial .row {
+    height: 100%;
+}
+
+#testimonial {
+    background: #dee2e4;
+}
+
+#testimonial .title span {
+    color: #da0c40;
+    font-weight: bold;
+}
+
+.carousel {
+    height: 100%;
+}
+
+.carousel-inner {
+    padding: 0 30px;
+}
+
+.carousel-item span {
+    display: block;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 0;
+}
+
+.carousel-item img {
+    height: 110px;
+    width: 110px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 8px solid #AFD3E2;
+    margin-bottom: 20px;
+}
+
+.carousel-item p {
+    font-size: 12px;
+    margin-top: 5px;
+    height: 100px;
+    overflow-y: auto;
+    padding: 0 15px;
+
+}
+
+.carousel-item p::-webkit-scrollbar {
+    width: 00px;
+}
+
+.social a {
+    color: black;
+    margin-right: 9px;
+    font-size: 1.5rem;
+}
+
+.social .fa-instagram {
+    color: #da0c40;
+}
+
+.social .fa-youtube {
+    color: #da0c0c;
+}
+
+.social .fa-twitter {
+    color: #1482ff;
+}
+
+.social .fa-linkedin {
+    color: #143fff;
+}
+
+.social .fa-blogger {
+    color: #ff8614;
+}
+
+
+.scroll_top {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 40px;
+    right: 30px;
+    border-radius: 50%;
+    background: #1482ff;
+    z-index: 99;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .2s ease-in;
+
+}
+
+.scroll_top.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll_top i {
+    font-size: 2rem;
+    color: white;
+}
