@@ -92,11 +92,11 @@ nav a,
     border-radius: 100px;
     rotate: 45deg;
     top: 0;
-    right: -290px;
+    right: -20%;
 }
 
 .heading {
-
+    border: 2px Solid red;
     outline: 4px dashed white;
     position: relative;
     z-index: 9;
@@ -162,10 +162,9 @@ button {
 }
 
 .shopBtn {
-
     padding: 10px 20px;
     margin: 30px 0;
-    width: 25%;
+    width: 150px;
     height: 50px;
     transition: background .2s ease;
     position: relative;
@@ -392,4 +391,37 @@ button {
 .scroll_top i {
     font-size: 2rem;
     color: white;
+}
+
+
+@media screen and (max-width:1199px) {
+    .heroSection .heading {
+        border: 2px Solid red;
+        margin: 0 auto;
+        scale: .7;
+    }
+
+    .heroSection_bg {
+        right: -30%;
+    }
+
+    .heroSection {
+        background: var(--header_color);
+        height: 490px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card h2 {
+        font-size: 1rem;
+        padding-right: 80px;
+    }
+
+    .card .Offerbtn {
+        top: 76%;
+        right: 80px;
+        scale: .7
+    }
+
 }
