@@ -6,8 +6,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    
-    
+
 }
 
 :root {
@@ -190,9 +189,10 @@ button {
 
 .title h2 {
     position: relative;
+
 }
 
-.title h2::before {
+#collection .title h2::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -267,6 +267,7 @@ button {
     background-position: center;
     background-size: cover;
     position: relative;
+    border-radius: 0;
 }
 
 .card h2 {
@@ -278,13 +279,15 @@ button {
 }
 
 .card .Offerbtn {
-    width: 250px;
+    max-width: 250px;
+    width: 100%;
     position: absolute;
     top: 80%;
     right: 210px;
     transform: translateY(-50%);
     padding: 10px 0;
     border-radius: 20px;
+    transform-origin: center;
     scale: .9
 }
 
@@ -297,9 +300,22 @@ button {
     background: #dee2e4;
 }
 
+
 #testimonial .title span {
     color: #da0c40;
     font-weight: bold;
+}
+
+#testimonial .title h2::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    background-color: var(--fx_color);
+    height: 100%;
+    width: 4px;
+    border: 2px Solid red;
 }
 
 .carousel {
@@ -394,7 +410,6 @@ button {
     color: white;
 }
 
-
 @media screen and (max-width:1199px) {
     .heroSection .heading {
         border: 2px Solid red;
@@ -407,11 +422,7 @@ button {
     }
 
     .heroSection {
-        background: var(--header_color);
         height: 490px;
-        width: 100%;
-        position: relative;
-        overflow: hidden;
     }
 
     .card h2 {
@@ -420,9 +431,61 @@ button {
     }
 
     .card .Offerbtn {
-        top: 76%;
+        top: 67%;
         right: 80px;
-        scale: .7
+        transform: scale(.8);
+    }
+}
+
+@media screen and (max-width:903px) {
+
+    .card h2 {
+        padding-right: 40px;
+    }
+
+    .card .Offerbtn {
+        top: 67%;
+        right: 39px;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .card {
+        background: rgb(82, 64, 255);
+    }
+
+    .card h2 {
+        font-size: 3.4rem;
+        padding: 0;
+        text-align: center;
+    }
+
+    .card .Offerbtn {
+        top: 76%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #testimonial .title h2::before {
+        top: 50%;
+        left: 80px;
+        border: 2px Solid red;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .card {
+        height: 150px;
+    }
+
+    .card h2 {
+        font-size: 3.3rem;
+        opacity: 0.3;
+    }
+
+    .card .Offerbtn {
+        top: 50%;
     }
 
 }
