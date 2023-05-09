@@ -78,10 +78,15 @@ nav a,
 
 .heroSection {
     background: var(--header_color);
-    height: 780px;
+    height: 650px;
     width: 100%;
     position: relative;
     overflow: hidden;
+}
+
+.heroSection .container,
+.heroSection .row {
+    height: 100%;
 }
 
 .heroSection_bg {
@@ -96,7 +101,6 @@ nav a,
 }
 
 .heading {
-    border: 2px Solid red;
     outline: 4px dashed white;
     position: relative;
     z-index: 9;
@@ -162,34 +166,35 @@ button {
 }
 
 .shopBtn {
-    padding: 10px 20px;
-    margin: 30px 0;
     width: 150px;
-    height: 50px;
+    height: 45px;
+    background: #da0c40;
     transition: background .2s ease;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .shopBtn::before {
     content: "";
     position: absolute;
     top: 50%;
-    left: -40%;
+    left: -30%;
     transform: translate(-50%, -50%) skew(30deg);
     background-color: var(--white);
-    width: 60px;
-    height: 100px;
+    width: 40px;
+    height: 60px;
     transition: left 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .shopBtn:hover::before {
-    left: 140%;
+    left: 130%;
 }
 
 .title h2 {
     position: relative;
-
 }
 
 #collection .title h2::before {
@@ -315,7 +320,6 @@ button {
     background-color: var(--fx_color);
     height: 100%;
     width: 4px;
-    border: 2px Solid red;
 }
 
 .carousel {
@@ -383,7 +387,6 @@ button {
     color: #ff8614;
 }
 
-
 .scroll_top {
     position: fixed;
     height: 50px;
@@ -397,7 +400,6 @@ button {
     opacity: 0;
     pointer-events: none;
     transition: all .2s ease-in;
-
 }
 
 .scroll_top.active {
@@ -412,8 +414,6 @@ button {
 
 @media screen and (max-width:1199px) {
     .heroSection .heading {
-        border: 2px Solid red;
-        margin: 0 auto;
         scale: .7;
     }
 
@@ -422,7 +422,7 @@ button {
     }
 
     .heroSection {
-        height: 490px;
+        height: 390px;
     }
 
     .card h2 {
@@ -437,8 +437,37 @@ button {
     }
 }
 
-@media screen and (max-width:903px) {
+@media screen and (max-width:991px) {
 
+
+    .style {
+        transform: translate(-50%, -50%) scale(1.08);
+    }
+
+    .heroSection .heading {
+        scale: .8;
+    }
+
+    .heroSection .mainHeading {
+        font-size: 4rem;
+    }
+
+    .heading {
+        font-size: 4rem;
+    }
+
+    .shopBtn {
+        margin: 10px 0;
+        font-size: 1rem;
+    }
+
+    .subMainHeadLine {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media screen and (max-width:903px) {
     .card h2 {
         padding-right: 40px;
     }
@@ -450,6 +479,9 @@ button {
 }
 
 @media screen and (max-width:767px) {
+    .heroSection_bg {
+        right: -48%;
+    }
 
     .card {
         background: rgb(82, 64, 255);
@@ -470,11 +502,19 @@ button {
     #testimonial .title h2::before {
         top: 50%;
         left: 80px;
-        border: 2px Solid red;
     }
 }
 
 @media screen and (max-width:575px) {
+    .heroSection_bg {
+        right: -80%;
+        top: 111px;
+    }
+
+    .heading {
+        font-size: 4rem;
+    }
+
     .card {
         height: 150px;
     }
