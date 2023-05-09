@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-
 }
 
 :root {
@@ -438,8 +437,6 @@ button {
 }
 
 @media screen and (max-width:991px) {
-
-
     .style {
         transform: translate(-50%, -50%) scale(1.08);
     }
@@ -455,7 +452,6 @@ button {
     .heading {
         font-size: 4rem;
     }
-
     .shopBtn {
         margin: 10px 0;
         font-size: 1rem;
@@ -464,14 +460,12 @@ button {
     .subMainHeadLine {
         font-size: 1.3rem;
     }
-
 }
 
 @media screen and (max-width:903px) {
     .card h2 {
         padding-right: 40px;
     }
-
     .card .Offerbtn {
         top: 67%;
         right: 39px;
@@ -483,10 +477,29 @@ button {
         right: -48%;
     }
 
+    .heroSection .mainHeading {
+        font-size: 3rem;
+    }
+
+    .heroSection .startHeading {
+        font-size: .75rem;
+    }
+
+    .mega_sale {
+        font-size: .9rem;
+    }
+
+    .subMainHeadLine {
+        font-size: 1rem;
+    }
+    .shopBtn {
+        width: 120px;
+        height: 35px;
+    }
+
     .card {
         background: rgb(82, 64, 255);
     }
-
     .card h2 {
         font-size: 3.4rem;
         padding: 0;
@@ -498,23 +511,16 @@ button {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
-    #testimonial .title h2::before {
-        top: 50%;
-        left: 80px;
-    }
 }
 
-@media screen and (max-width:575px) {
+@media (max-width:575px) {
     .heroSection_bg {
         right: -80%;
         top: 111px;
     }
-
     .heading {
         font-size: 4rem;
     }
-
     .card {
         height: 150px;
     }
@@ -526,6 +532,94 @@ button {
 
     .card .Offerbtn {
         top: 50%;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:427px) {
+    .card h2 {
+        font-size: 2.7rem;
+    }
+
+    .card .Offerbtn {
+        max-width: 220px;
+        left: 48%;
+    }
+}
+
+@media screen and (max-width:355px) {
+    #testimonial .title h2 {
+        font-size: 1.4rem;
+    }
+
+    .heroSection .mainHeading {
+        font-size: 2.6rem;
+    }
+
+    .card h2 {
+        font-size: 2.5rem;
+    }
+
+    .heroSection .mainHeading {
+        font-size: 1.9rem;
+    }
+}
+@media screen and (max-width:278px) {
+    .heroSection {
+        height: 270px;
+    }
+
+
+    .headerNav {
+        padding-right: 0px;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .headerNav .container {
+        padding-right: 0px;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .navbar-toggler {
+        font-size: 22px;
+    }
+
+    .brandName {
+        font-size: 20px;
+    }
+
+    .brandIcon {
+        font-size: 23px;
+    }
+
+    .heroSection .mainHeading {
+        font-size: 2.2rem;
+    }
+
+    .mega_sale,
+    .startHeading,
+    .subMainHeadLine {
+        display: none;
+    }
+}
+
+@media screen and (max-width:198px) {
+
+    #testimonial,
+    .heroSection,
+    .card {
+        display: none;
+    }
+
+    .heading {
+        border: 2px Solid red;
     }
 
 }
